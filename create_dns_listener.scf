@@ -129,7 +129,6 @@ net self-allow {
         udp:53
     }
 }
-net stp /Common/cist {
 
 sys provision gtm {
     level nominal
