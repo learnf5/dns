@@ -1,16 +1,5 @@
 #TMSH-VERSION: 17.1.0
 
-
-auth user admin {
-    description "Admin User"
-    encrypted-password $6$f1Qr4WOP$p/lMmHKT3VSK4y29ICxMG6dxSugZTyKlYltP8FVxBktFqltb5BM/MIlZLnCttj2/urzKTmDiS5cFeHdc5FkII1
-    partition-access {
-        all-partitions {
-            role admin
-        }
-    }
-    shell tmsh
-}
 auth user f5hubblelcdadmin {
     description f5hubblelcdadmin
     encrypted-password TWjODrHtyWhsTFw11CyvcAOgoQGAgCmx
@@ -20,11 +9,6 @@ auth user f5hubblelcdadmin {
         }
     }
     shell none
-}
-auth user root {
-    description root
-    encrypted-password $6$xSGmXrFm$jidJs002Iap/Jz5SCqJMJ2tXWLmX.YZKItZqXnIcmUXFAr62RbxYAFIOvJf/DD.lt3TJpTLptK2/l5I8JxSSe/
-    shell bash
 }
 
 cm device-group /Common/gtm {
