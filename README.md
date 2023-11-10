@@ -1,6 +1,13 @@
 # dns
 Repo for DNS SDT course
 
+SCF files are difference files, not a complete big-ip configration set.
+Use the tmsh command to merge the given scf into the base lab configuration
+tmsh load sys config merge file create_dns_listener.scf
+
+SCF file names follow the captured state of the previous lab. Example, create_dns_listener.scf contains the big-ip configuration and local traffic objects created in the DNS-C1C04-ProvBigip lab.
+Notice that some labs start from a common configuration, using configure_wideip.scf for multiple lab starting points.
+
 | Lab Name | Archive File |
 | --- | --- |
 | DNS-C1A01-Tmsh | cfg_w_tmsh.scf |
